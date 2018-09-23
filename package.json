@@ -1,0 +1,48 @@
+{
+  "name": "ecommerce-example",
+  "version": "1.0.0",
+  "description": "A simple example of an ecommerce product page",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "rimraf ./dist && webpack --config ./.config/webpack.prod.js --mode production",
+    "serve": "webpack-dev-server --config ./.config/webpack.dev.js --mode development",
+    "start": "webpack-dev-server --config ./.config/webpack.dev.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisbruford/ecommerce-example.git"
+  },
+  "author": "Chris Bruford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisbruford/ecommerce-example/issues"
+  },
+  "homepage": "https://github.com/chrisbruford/ecommerce-example#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-ajax": "^3.4.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "node-sass": "^4.9.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
