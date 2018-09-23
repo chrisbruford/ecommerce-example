@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+html, body {
+    background-color: $pearl;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    color: $black;
+    height: 100%;
+}
+
+a {
+    color: $rouge;
+    text-decoration: none;
+}
+
+span.remove:hover {
+    cursor: pointer;
+}

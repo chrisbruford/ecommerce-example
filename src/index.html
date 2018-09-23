@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
+    <header>
+        <section>
+            <img src="./assets/logo-white.png" alt="Eclectees company logo" class="logo">
+            <div id="cart-status">
+                <p><i class="fa fa-cart-plus cart-icon" aria-hidden="true"></i>£<span id="cart-value">0.00</span><i class="cart-count">0</i></p>
+            </div>
+        </section>
+        <div class="basket-header-image"></section>
+    </header>
+
+    <main>
+        <div id="wrapper">
+            <div id="gallery">
+                <section id="sort-gallery">
+                    <label for="">Sort by:</label>
+                    <select id="sortBy">
+                        <option value="price">Price</option>
+                        <option value="title">Name</option>
+                    </select>
+                    <select id="ascending">
+                        <option value="true">Ascending</option>
+                        <option value="false">Desending</option>
+                    </select>
+                </section>
+
+                <section id="gallery-inner">
+                    <!-- build gallery here -->
+                </section>
+            </div>
+
+            
+            <aside id="cart-preview">
+                <div class="cart-inner">
+                    <h3>cart<i class="cart-count">0</i></h3>
+                    <hr>
+                    <section id="items"></section>
+                    <section id="total">
+                        <div>
+                            <p>Total</p>
+                            <p>£<span class="amount">0.00</span></p>
+                        </div>
+                        <div>
+                            <p>Inc. £<span class="taxes">0.00</span> in taxes</p>
+                        </div>
+                            
+                    </section>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <img src="./assets/logo-red.png" alt="Eclectees company logo">
+        <p>&copy; Eclectees Co Ltd. 2018</p>
+        <ul>
+            <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
