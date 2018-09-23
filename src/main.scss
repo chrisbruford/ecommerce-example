@@ -59,10 +59,6 @@ header {
 
 main {
 
-    #sort-gallery {
-        margin: 0.3rem;
-    }
-
     flex: 1 0 auto;
     #wrapper {
         display: flex;
@@ -75,17 +71,29 @@ main {
             flex-flow: row nowrap;
         }
     }
-    #gallery-inner {
+
+    #gallery {
+        display: flex;
+        flex-flow: column nowrap;
         flex: 0 0 100%;
         order: 2;
-        display: flex;
-        flex-flow: row wrap;
-        
+
         @media screen and (min-width: 64em) {
             order: 1;
             flex: 0 0 75%;
             display: flex;
         }
+    }
+
+    #sort-gallery {
+        margin: 0.3rem;
+    }
+
+    #gallery-inner {
+        flex: 0 0 100%;
+        order: 2;
+        display: flex;
+        flex-flow: row wrap;
 
         .product {
             flex: 0 0 100%;
@@ -156,6 +164,7 @@ main {
             }
         }
     }
+
     #cart-preview {
         flex: 0 0 100%;
         order: 1;
