@@ -6,8 +6,8 @@
   "scripts": {
     "test": "karma start",
     "build": "rimraf ./dist && webpack --config ./.config/webpack.prod.js --mode production",
-    "serve": "webpack-dev-server --config ./.config/webpack.dev.js --mode development",
-    "start": "webpack-dev-server --config ./.config/webpack.dev.js --mode development"
+    "serve": "webpack-dev-server --config ./.config/webpack.dev.js --mode development --open",
+    "start": "webpack-dev-server --config ./.config/webpack.dev.js --mode development --open"
   },
   "repository": {
     "type": "git",
