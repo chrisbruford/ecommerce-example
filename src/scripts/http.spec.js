@@ -34,7 +34,7 @@ describe('http', () => {
             expect(result).toEqual(jasmine.any(Promise));
 
             result.then(res => {
-                expect(res).toEqual(testResponses.users.success.responseText);
+                expect(res).toEqual(JSON.parse(testResponses.users.success.responseText));
                 done();
             });
 
