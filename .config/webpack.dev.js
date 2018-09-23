@@ -18,7 +18,7 @@ module.exports = webpackMerge(commonConfig, {
        }),
        new CopyWebpackPlugin([
            {from: './src/*.html', flatten: true},
-           {from: './**/*', to:'./assets', context: './src/assets/'}
+           {from: './**/*.+(png|jpg|jpeg|gif)', to:'./assets', context: './src/assets/'}
        ])
    ]
 });

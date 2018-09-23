@@ -1,6 +1,4 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -27,7 +25,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     'style-loader',
-                    'css-loader',
+                    { loader: 'css-loader', options: {url: false} },
                     'sass-loader'
                 ]
             }
